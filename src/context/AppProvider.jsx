@@ -102,7 +102,10 @@ function AppProvider({ children }) {
 
           const contract = new web3.eth.Contract(
             NFMintAbi.abi,
-            "0xfc0918F42b7B6008A7Fb2dC7464bc6Ea6e871067"
+            "0xfc0918F42b7B6008A7Fb2dC7464bc6Ea6e871067",
+            {
+              from: accounts[0],
+            }
           );
 
           setNFMintContract(contract);
