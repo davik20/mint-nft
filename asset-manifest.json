@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/mint-nft/static/css/main.4a4137e4.chunk.css",
+    "main.js": "/mint-nft/static/js/main.a93fe465.chunk.js",
+    "main.js.map": "/mint-nft/static/js/main.a93fe465.chunk.js.map",
+    "runtime-main.js": "/mint-nft/static/js/runtime-main.122e1791.js",
+    "runtime-main.js.map": "/mint-nft/static/js/runtime-main.122e1791.js.map",
+    "static/css/2.ab75b8d7.chunk.css": "/mint-nft/static/css/2.ab75b8d7.chunk.css",
+    "static/js/2.c682441a.chunk.js": "/mint-nft/static/js/2.c682441a.chunk.js",
+    "static/js/2.c682441a.chunk.js.map": "/mint-nft/static/js/2.c682441a.chunk.js.map",
+    "index.html": "/mint-nft/index.html",
+    "static/css/2.ab75b8d7.chunk.css.map": "/mint-nft/static/css/2.ab75b8d7.chunk.css.map",
+    "static/css/main.4a4137e4.chunk.css.map": "/mint-nft/static/css/main.4a4137e4.chunk.css.map",
+    "static/js/2.c682441a.chunk.js.LICENSE.txt": "/mint-nft/static/js/2.c682441a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.122e1791.js",
+    "static/css/2.ab75b8d7.chunk.css",
+    "static/js/2.c682441a.chunk.js",
+    "static/css/main.4a4137e4.chunk.css",
+    "static/js/main.a93fe465.chunk.js"
+  ]
+}

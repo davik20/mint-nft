@@ -1,0 +1,20 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --container-padding: 2rem;
+  --default-border: 1px solid rgba(0, 0, 0, 0.2);
+  --light-border: 1px solid rgba(0, 0, 0, 0.1);
+  --color-light-brown: rgba(0, 0, 0, 0.6);
+  --color-light-blue: rgb(21, 113, 250);
+  --default-font-size: 1.4rem;
+}
+
+html {
+  font-size: 10px;
+}
