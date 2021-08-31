@@ -40,10 +40,12 @@ function AppProvider({ children }) {
 
   useEffect(() => {
     if (NFMintContract && account) {
+      console.log(NFMintContract);
       setLoadingNFTs(true);
+
       NFMintContract.methods
         .getAllUserCollectibles(account)
-        .call()
+        .call({ from: account })
         .then((result) => {
           const userNFTs = result.map((nft) => {
             const { name, description, imageUrl } = JSON.parse(nft.tokenURI);
@@ -60,11 +62,12 @@ function AppProvider({ children }) {
           setLoadingNFTs(false);
         })
         .catch((err) => {
+          console.log(err);
           setLoadingNFTs(false);
           toast("An error occurred");
         });
     }
-  }, [NFMintContract, rand, account]);
+  }, [NFMintContract, account]);
 
   const handleCloseCreateModal = () => {
     setShowCreateModal(false);
@@ -99,7 +102,7 @@ function AppProvider({ children }) {
 
           const contract = new web3.eth.Contract(
             NFMintAbi.abi,
-            "0xA8FEFbfDa63e88533283a1251371ED71243Fc62D"
+            "0xfc0918F42b7B6008A7Fb2dC7464bc6Ea6e871067"
           );
 
           setNFMintContract(contract);
@@ -113,7 +116,7 @@ function AppProvider({ children }) {
 
             const contract = new web3.eth.Contract(
               NFMintAbi.abi,
-              "0xA8FEFbfDa63e88533283a1251371ED71243Fc62D"
+              "0x46c9f3C031b79D2a9f9Ab3e416Eb19A91dd00e6D"
             );
 
             setNFMintContract(contract);
