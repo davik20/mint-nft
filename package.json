@@ -1,6 +1,6 @@
 {
-  "homepage": "https://davik20.github.io/MintNFT",
-  "name": "nftmint",
+  "homepage": "http://davik20.github.io/mint-nft",
+  "name": "mint-nft",
   "version": "0.1.0",
   "private": true,
   "engines": {
@@ -12,6 +12,7 @@
     "@material-ui/icons": "^4.11.2",
     "@material-ui/lab": "^4.0.0-alpha.60",
     "@walletconnect/web3-provider": "^1.6.5",
+    "gh-pages": "^3.2.3",
     "ipfs-http-client": "^52.0.2",
     "lodash": "^4.17.21",
     "react": "^17.0.2",
