@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { AppContext, AppContextUpdate } from "../context/AppProvider";
 import styled from "styled-components";
-import getLogo from "../functions/getLogo";
+
 import { shortenAddress } from "../functions/utilities";
 import device from "../styles/responsive";
 function Navbar() {
@@ -27,7 +27,7 @@ function Navbar() {
         <NavbarContainer>
           <Logo>
             <p>NFMint</p>
-            <img src={getLogo()} />
+            <img src={`${process.env.PUBLIC_URL}/img/ethereumlogo.png`} />
           </Logo>
           {/* <Title>MY NFTs</Title> */}
           <AddNFT
@@ -62,7 +62,7 @@ const Container = styled.div`
   z-index: 50;
   background-color: white;
   width: 100%;
-  height: 6rem;
+  min-height: 6rem;
   position: fixed;
   border-bottom: var(--default-border);
   top: 0;

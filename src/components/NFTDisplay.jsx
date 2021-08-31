@@ -15,7 +15,7 @@ function NFTDisplay() {
     <Container>
       {account && (
         <Top>
-          <SearchBar ref={searchBar}>
+          {/* <SearchBar ref={searchBar}>
             <IconSearch fontSize={"large"} />
             <input
               onFocus={() => {
@@ -27,8 +27,8 @@ function NFTDisplay() {
               type="text"
               placeholder="Search"
             />
-          </SearchBar>
-          <FilterBar onClick={() => setShowCategory(!showCategory)}>
+          </SearchBar> */}
+          {/* <FilterBar onClick={() => setShowCategory(!showCategory)}>
             <p>{!category ? "Category" : category}</p>
             <Expand />
 
@@ -46,7 +46,7 @@ function NFTDisplay() {
                 ))}
               </FilterOptions>
             )}
-          </FilterBar>
+          </FilterBar> */}
         </Top>
       )}
       {account && (

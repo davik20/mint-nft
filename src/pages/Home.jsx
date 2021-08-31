@@ -4,7 +4,8 @@ import FileCopyIcon from "@material-ui/icons/FileCopy";
 import NFTDisplay from "../components/NFTDisplay";
 import CreateNFT from "../components/CreateNFT";
 import { AppContext, AppContextUpdate } from "../context/AppProvider";
-import { shortenAddress } from "../functions/utilities";
+import { copyToClipboard, shortenAddress } from "../functions/utilities";
+import toast from "react-hot-toast";
 function Home() {
   const { showCreateModal, account } = useContext(AppContext);
   return (
@@ -16,7 +17,12 @@ function Home() {
             <Img src={`${process.env.PUBLIC_URL}/img/profile.png`} />
 
             {account && (
-              <Address>
+              <Address
+                onClick={() => {
+                  copyToClipboard(account);
+                  toast.success("copied to clipboard");
+                }}
+              >
                 <span>{shortenAddress(account)}</span> <CopyIcon />
               </Address>
             )}
